@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>동네 가게 숫자 — 개인정보 처리방침</title>
+    <style>
+      body { margin: 0; padding: 24px 18px 60px; background: #F7F6F2; color: #1C1B18;
+             font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+             font-size: 17px; line-height: 1.7; }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+      h2 { font-size: 20px; margin: 28px 0 8px; }
+      .date { color: #6F6A62; font-size: 15px; margin-bottom: 24px; }
+      ul { padding-left: 20px; }
+      li { margin: 4px 0; }
+      .box { background: #fff; border: 1px solid #E4E0D6; border-radius: 14px; padding: 16px; }
+      .em { font-weight: 700; color: #2F5D50; }
+      code { background: #EFEDE6; border-radius: 5px; padding: 1px 5px; font-size: 15px; }
+      footer { margin-top: 32px; color: #8B8880; font-size: 15px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>개인정보 처리방침</h1>
+      <div class="date">동네 가게 숫자 (town-shops) · 시행일 2026년 9월 29일</div>
+
+      <div class="box">
+        <p class="em" style="margin:0">동네 가게 숫자는 이용자를 식별할 수 있는 개인정보를 수집하지 않습니다.</p>
+        <p style="margin:8px 0 0">회원가입과 로그인이 없고, 이름·연락처·주소 같은 정보를 입력받지 않습니다. 글을 적는 칸도 없습니다. 이용자가 목록에서 고른 <strong>동네(시·군·구)는 이용자 기기 안에만 저장</strong>됩니다. <strong>위치 권한을 포함해 어떤 기기 권한도 요청하지 않습니다.</strong></p>
+      </div>
+
+      <h2>1. 수집하는 개인정보 항목</h2>
+      <p>없습니다. 본 서비스에는 <strong>자체 서버가 없으며</strong>, 이용자별 계정도 없습니다. 앱이 외부에서 받는 것은 아래 3항의 공개 데이터 파일뿐입니다.</p>
+
+      <h2>2. 이용자 기기에 저장되는 정보</h2>
+      <p>이용자의 기기(웹 저장소, localStorage)에 다음 두 가지가 저장됩니다.</p>
+      <ul>
+        <li><code>townShops.town.v1</code> — 이용자가 고른 동네(시·도와 시·군·구 이름). 또는 「건너뛰기」를 골랐다는 표시.</li>
+        <li><code>townShops.solved.v1</code> — 최근 푼 카드(최대 14장)와 이용자가 고른 보기. 「지난 카드」 화면과 「오늘 카드를 이미 풀었는지」를 알기 위해서입니다.</li>
+      </ul>
+      <p>이 정보는 기기 밖으로 보내지 않습니다.</p>
+
+      <h2>3. 숫자의 출처</h2>
+      <p>화면의 숫자는 <strong>국세청 「100대 생활업종」 통계</strong>(공공데이터포털 15061118)의 <strong>사업자 수</strong>입니다. 운영자가 매달 공개 정적 파일로 만들어 두면 앱이 그 파일을 내려받아 보여 줍니다. 받는 파일은 전국 파일 하나와, 동네를 골랐다면 그 동네 파일 하나입니다. 이 파일은 모든 이용자에게 똑같습니다.</p>
+      <p>사업자등록 기준 숫자이므로 실제로 영업 중인 가게 수와 다를 수 있습니다. 이용 중 AI 호출은 발생하지 않습니다.</p>
+
+      <h2>4. 제3자 제공 및 처리 위탁</h2>
+      <p>수집하는 개인정보가 없으므로 제3자 제공과 처리 위탁도 없습니다. 「친구에게 문제 보내기」를 누르면 토스의 공유 기능으로 <strong>카드의 질문 문장과 앱 링크</strong>가 이용자가 고른 상대에게 전달됩니다. 정답과 숫자는 담기지 않습니다.</p>
+
+      <h2>5. 이용 통계</h2>
+      <p>서비스 개선을 위해 앱인토스가 제공하는 이벤트 로그 기능으로 <strong>익명 행동 기록</strong>을 남깁니다. 개인을 식별할 수 있는 정보는 포함되지 않습니다. 남기는 값은 다음이 전부입니다.</p>
+      <ul>
+        <li>앱 실행, 카드 보기, 보기를 고른 것과 맞았는지 여부, 「우리 동네는?」 펼치기, 공유 버튼 누르기, 지난 카드 열기</li>
+        <li>동네를 고를 때 <strong>시·도 이름</strong>(예: 서울). 시·군·구 이름은 남기지 않습니다</li>
+        <li>화면이 뜨기까지 걸린 시간(밀리초)과 기기 종류(iOS/Android), CPU 코어 수·메모리 크기 같은 기기 성능 구분 — 느린 기기에서 첫 화면이 늦게 뜨는지 보기 위해서입니다. 같은 시간 값은 운영자의 성능 수집 서버에도 한 번 보내지며, IP 주소와 기기 식별자는 저장하지 않습니다</li>
+        <li>광고 띠가 떴는지·실패했는지(광고를 켠 뒤)</li>
+      </ul>
+
+      <h2>6. 알림</h2>
+      <p>본 서비스는 알림을 보내지 않으며 알림 동의를 받지 않습니다.</p>
+
+      <h2>7. 광고</h2>
+      <p>본 서비스는 <strong>앱인토스 광고 SDK</strong>를 통해 화면 맨 아래에 붙는 <strong>배너 하나만</strong> 게재할 수 있습니다. 정답을 보기 전 화면에는 광고가 없습니다. 전면 광고와 리워드형 광고는 없습니다. 광고 처리는 앱인토스(비바리퍼블리카)의 광고 정책과 개인정보 처리방침을 따르며, 본 서비스는 광고 목적으로 이용자의 동네나 개인정보를 제공하지 않습니다.</p>
+
+      <h2>8. 결제</h2>
+      <p>앱 내 결제가 없습니다.</p>
+
+      <h2>9. 저장된 정보의 삭제</h2>
+      <p>앱(또는 브라우저)의 저장 데이터를 삭제하거나 앱을 삭제하면 위 2항의 정보가 즉시 사라집니다. 별도의 요청 절차가 필요하지 않습니다.</p>
+
+      <h2>10. 아동의 개인정보</h2>
+      <p>개인정보를 수집하지 않으므로 연령에 따른 별도 수집·동의 절차가 없습니다.</p>
+
+      <h2>11. 문의처</h2>
+      <p>개인정보 처리방침에 대한 문의: <strong>shoo99@gmail.com</strong></p>
+
+      <h2>12. 변경 고지</h2>
+      <p>내용이 변경되는 경우 이 페이지에 변경 내용과 시행일을 게시합니다.</p>
+
+      <footer>© 동네 가게 숫자</footer>
+    </main>
+  </body>
+</html>
